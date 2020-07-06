@@ -20,7 +20,7 @@ public class TrendingSeriesResult {
     private Integer voteCount;
     @SerializedName("vote_average")
     @Expose
-    private Integer voteAverage;
+    private Double voteAverage;
     @SerializedName("first_air_date")
     @Expose
     private String firstAirDate;
@@ -52,7 +52,7 @@ public class TrendingSeriesResult {
     public TrendingSeriesResult() {
     }
 
-    public TrendingSeriesResult(String originalName, Integer id, String name, Integer voteCount, Integer voteAverage, String firstAirDate, String posterPath, List<Integer> genreIds, String originalLanguage, String backdropPath, String overview, List<String> originCountry, Double popularity, String mediaType) {
+    public TrendingSeriesResult(String originalName, Integer id, String name, Integer voteCount, Double voteAverage, String firstAirDate, String posterPath, List<Integer> genreIds, String originalLanguage, String backdropPath, String overview, List<String> originCountry, Double popularity, String mediaType) {
         this.originalName = originalName;
         this.id = id;
         this.name = name;
@@ -101,11 +101,11 @@ public class TrendingSeriesResult {
         this.voteCount = voteCount;
     }
 
-    public Integer getVoteAverage() {
+    public Double getVoteAverage() {
         return voteAverage;
     }
 
-    public void setVoteAverage(Integer voteAverage) {
+    public void setVoteAverage(Double voteAverage) {
         this.voteAverage = voteAverage;
     }
 

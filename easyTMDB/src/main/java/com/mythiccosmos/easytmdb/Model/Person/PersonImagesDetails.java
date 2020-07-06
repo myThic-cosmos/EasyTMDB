@@ -18,7 +18,7 @@ class PersonImagesDetails {
     private Integer voteCount;
     @SerializedName("vote_average")
     @Expose
-    private Integer voteAverage;
+    private Double voteAverage;
     @SerializedName("file_path")
     @Expose
     private String filePath;
@@ -29,7 +29,7 @@ class PersonImagesDetails {
     public PersonImagesDetails() {
     }
 
-    public PersonImagesDetails(String iso6391, Integer width, Integer height, Integer voteCount, Integer voteAverage, String filePath, Double aspectRatio) {
+    public PersonImagesDetails(String iso6391, Integer width, Integer height, Integer voteCount, Double voteAverage, String filePath, Double aspectRatio) {
         this.iso6391 = iso6391;
         this.width = width;
         this.height = height;
@@ -71,11 +71,11 @@ class PersonImagesDetails {
         this.voteCount = voteCount;
     }
 
-    public Integer getVoteAverage() {
+    public Double getVoteAverage() {
         return voteAverage;
     }
 
-    public void setVoteAverage(Integer voteAverage) {
+    public void setVoteAverage(Double voteAverage) {
         this.voteAverage = voteAverage;
     }
 

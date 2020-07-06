@@ -33,7 +33,7 @@ public class NextEpisodeToAir {
     private String stillPath;
     @SerializedName("vote_average")
     @Expose
-    private Integer voteAverage;
+    private Double voteAverage;
     @SerializedName("vote_count")
     @Expose
     private Integer voteCount;
@@ -41,7 +41,7 @@ public class NextEpisodeToAir {
     public NextEpisodeToAir() {
     }
 
-    public NextEpisodeToAir(String airDate, Integer episodeNumber, Integer id, String name, String overview, String productionCode, Integer seasonNumber, Integer showId, String stillPath, Integer voteAverage, Integer voteCount) {
+    public NextEpisodeToAir(String airDate, Integer episodeNumber, Integer id, String name, String overview, String productionCode, Integer seasonNumber, Integer showId, String stillPath, Double voteAverage, Integer voteCount) {
         this.airDate = airDate;
         this.episodeNumber = episodeNumber;
         this.id = id;
@@ -127,11 +127,11 @@ public class NextEpisodeToAir {
         this.stillPath = stillPath;
     }
 
-    public Integer getVoteAverage() {
+    public Double getVoteAverage() {
         return voteAverage;
     }
 
-    public void setVoteAverage(Integer voteAverage) {
+    public void setVoteAverage(Double voteAverage) {
         this.voteAverage = voteAverage;
     }
 
