@@ -7,6 +7,7 @@ import com.mythiccosmos.easytmdb.Model.GenresDetails;
 import com.mythiccosmos.easytmdb.Model.Network;
 import com.mythiccosmos.easytmdb.Model.ProductionCompany;
 import com.mythiccosmos.easytmdb.Model.Series.SeriesDetails.LastEpisodeToAir;
+import com.mythiccosmos.easytmdb.Model.Series.SeriesDetails.NextEpisodeToAir;
 import com.mythiccosmos.easytmdb.Model.Series.SeriesDetails.SeriesDetailsSeason;
 
 import java.util.List;
@@ -50,7 +51,7 @@ public class SeriesLatest {
     private String name;
     @SerializedName("next_episode_to_air")
     @Expose
-    private String nextEpisodeToAir;
+    private NextEpisodeToAir nextEpisodeToAir;
     @SerializedName("networks")
     @Expose
     private List<Network> networks;
@@ -100,7 +101,7 @@ public class SeriesLatest {
     public SeriesLatest() {
     }
 
-    public SeriesLatest(String backdropPath, List<CreatedBy> createdBy, List<Integer> episodeRunTime, String firstAirDate, List<GenresDetails> genresDetails, String homepage, Integer id, Boolean inProduction, List<String> languages, String lastAirDate, LastEpisodeToAir lastEpisodeToAir, String name, String nextEpisodeToAir, List<Network> networks, Integer numberOfEpisodes, Integer numberOfSeasons, List<String> originCountry, String originalLanguage, String originalName, String overview, Integer popularity, String posterPath, List<ProductionCompany> productionCompanies, List<SeriesDetailsSeason> seriesDetailsSeasons, String status, String type, Integer voteAverage, Integer voteCount) {
+    public SeriesLatest(String backdropPath, List<CreatedBy> createdBy, List<Integer> episodeRunTime, String firstAirDate, List<GenresDetails> genresDetails, String homepage, Integer id, Boolean inProduction, List<String> languages, String lastAirDate, LastEpisodeToAir lastEpisodeToAir, String name, NextEpisodeToAir nextEpisodeToAir, List<Network> networks, Integer numberOfEpisodes, Integer numberOfSeasons, List<String> originCountry, String originalLanguage, String originalName, String overview, Integer popularity, String posterPath, List<ProductionCompany> productionCompanies, List<SeriesDetailsSeason> seriesDetailsSeasons, String status, String type, Integer voteAverage, Integer voteCount) {
         this.backdropPath = backdropPath;
         this.createdBy = createdBy;
         this.episodeRunTime = episodeRunTime;
@@ -227,11 +228,11 @@ public class SeriesLatest {
         this.name = name;
     }
 
-    public String getNextEpisodeToAir() {
+    public NextEpisodeToAir getNextEpisodeToAir() {
         return nextEpisodeToAir;
     }
 
-    public void setNextEpisodeToAir(String nextEpisodeToAir) {
+    public void setNextEpisodeToAir(NextEpisodeToAir nextEpisodeToAir) {
         this.nextEpisodeToAir = nextEpisodeToAir;
     }
 

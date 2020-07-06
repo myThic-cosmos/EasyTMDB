@@ -1,11 +1,6 @@
 package com.mythiccosmos.easytmdb;
 
 import com.mythiccosmos.easytmdb.Enum.ImageSize;
-import com.mythiccosmos.easytmdb.Model.Movie.MovieLatest.MovieLatest;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
 public class EasyTMDB {
     String TAG = EasyTMDB.class.getSimpleName();
@@ -78,8 +73,6 @@ public class EasyTMDB {
     public static String getTMDB_KEY() {
         return TMDB_KEY;
     }
-
-
 
 
 }

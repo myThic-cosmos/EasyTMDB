@@ -48,7 +48,7 @@ public class SeriesDetails {
     private String name;
     @SerializedName("next_episode_to_air")
     @Expose
-    private String nextEpisodeToAir;
+    private NextEpisodeToAir nextEpisodeToAir;
     @SerializedName("networks")
     @Expose
     private List<Network> networks;
@@ -98,7 +98,7 @@ public class SeriesDetails {
     public SeriesDetails() {
     }
 
-    public SeriesDetails(String backdropPath, List<CreatedBy> createdBy, List<Integer> episodeRunTime, String firstAirDate, List<GenresDetails> genresDetails, String homepage, Integer id, Boolean inProduction, List<String> languages, String lastAirDate, LastEpisodeToAir lastEpisodeToAir, String name, String nextEpisodeToAir, List<Network> networks, Integer numberOfEpisodes, Integer numberOfSeasons, List<String> originCountry, String originalLanguage, String originalName, String overview, Double popularity, String posterPath, List<ProductionCompany> productionCompanies, List<SeriesDetailsSeason> seriesDetailsSeasons, String status, String type, Double voteAverage, Integer voteCount) {
+    public SeriesDetails(String backdropPath, List<CreatedBy> createdBy, List<Integer> episodeRunTime, String firstAirDate, List<GenresDetails> genresDetails, String homepage, Integer id, Boolean inProduction, List<String> languages, String lastAirDate, LastEpisodeToAir lastEpisodeToAir, String name, NextEpisodeToAir nextEpisodeToAir, List<Network> networks, Integer numberOfEpisodes, Integer numberOfSeasons, List<String> originCountry, String originalLanguage, String originalName, String overview, Double popularity, String posterPath, List<ProductionCompany> productionCompanies, List<SeriesDetailsSeason> seriesDetailsSeasons, String status, String type, Double voteAverage, Integer voteCount) {
         this.backdropPath = backdropPath;
         this.createdBy = createdBy;
         this.episodeRunTime = episodeRunTime;
@@ -225,11 +225,11 @@ public class SeriesDetails {
         this.name = name;
     }
 
-    public String getNextEpisodeToAir() {
+    public NextEpisodeToAir getNextEpisodeToAir() {
         return nextEpisodeToAir;
     }
 
-    public void setNextEpisodeToAir(String nextEpisodeToAir) {
+    public void setNextEpisodeToAir(NextEpisodeToAir nextEpisodeToAir) {
         this.nextEpisodeToAir = nextEpisodeToAir;
     }
 
