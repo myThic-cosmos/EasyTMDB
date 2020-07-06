@@ -93,7 +93,7 @@ public class SeriesLatest {
     private String type;
     @SerializedName("vote_average")
     @Expose
-    private Integer voteAverage;
+    private Double voteAverage;
     @SerializedName("vote_count")
     @Expose
     private Integer voteCount;
@@ -101,7 +101,7 @@ public class SeriesLatest {
     public SeriesLatest() {
     }
 
-    public SeriesLatest(String backdropPath, List<CreatedBy> createdBy, List<Integer> episodeRunTime, String firstAirDate, List<GenresDetails> genresDetails, String homepage, Integer id, Boolean inProduction, List<String> languages, String lastAirDate, LastEpisodeToAir lastEpisodeToAir, String name, NextEpisodeToAir nextEpisodeToAir, List<Network> networks, Integer numberOfEpisodes, Integer numberOfSeasons, List<String> originCountry, String originalLanguage, String originalName, String overview, Integer popularity, String posterPath, List<ProductionCompany> productionCompanies, List<SeriesDetailsSeason> seriesDetailsSeasons, String status, String type, Integer voteAverage, Integer voteCount) {
+    public SeriesLatest(String backdropPath, List<CreatedBy> createdBy, List<Integer> episodeRunTime, String firstAirDate, List<GenresDetails> genresDetails, String homepage, Integer id, Boolean inProduction, List<String> languages, String lastAirDate, LastEpisodeToAir lastEpisodeToAir, String name, NextEpisodeToAir nextEpisodeToAir, List<Network> networks, Integer numberOfEpisodes, Integer numberOfSeasons, List<String> originCountry, String originalLanguage, String originalName, String overview, Integer popularity, String posterPath, List<ProductionCompany> productionCompanies, List<SeriesDetailsSeason> seriesDetailsSeasons, String status, String type, Double voteAverage, Integer voteCount) {
         this.backdropPath = backdropPath;
         this.createdBy = createdBy;
         this.episodeRunTime = episodeRunTime;
@@ -340,11 +340,11 @@ public class SeriesLatest {
         this.type = type;
     }
 
-    public Integer getVoteAverage() {
+    public Double getVoteAverage() {
         return voteAverage;
     }
 
-    public void setVoteAverage(Integer voteAverage) {
+    public void setVoteAverage(Double voteAverage) {
         this.voteAverage = voteAverage;
     }
 

@@ -81,7 +81,7 @@ public class MovieLatest {
     private Boolean video;
     @SerializedName("vote_average")
     @Expose
-    private Integer voteAverage;
+    private Double voteAverage;
     @SerializedName("vote_count")
     @Expose
     private Integer voteCount;
@@ -89,7 +89,7 @@ public class MovieLatest {
     public MovieLatest() {
     }
 
-    public MovieLatest(Boolean adult, String backdropPath, Object belongsToCollection, Integer budget, List<GenresDetails> genresDetails, String homepage, Integer id, String imdbId, String originalLanguage, String originalTitle, String overview, Integer popularity, String posterPath, List<ProductionCompany> productionCompanies, List<ProductionCountry> productionCountries, String releaseDate, Integer revenue, Integer runtime, List<SpokenLanguage> spokenLanguages, String status, String tagline, String title, Boolean video, Integer voteAverage, Integer voteCount) {
+    public MovieLatest(Boolean adult, String backdropPath, Object belongsToCollection, Integer budget, List<GenresDetails> genresDetails, String homepage, Integer id, String imdbId, String originalLanguage, String originalTitle, String overview, Integer popularity, String posterPath, List<ProductionCompany> productionCompanies, List<ProductionCountry> productionCountries, String releaseDate, Integer revenue, Integer runtime, List<SpokenLanguage> spokenLanguages, String status, String tagline, String title, Boolean video, Double voteAverage, Integer voteCount) {
         this.adult = adult;
         this.backdropPath = backdropPath;
         this.belongsToCollection = belongsToCollection;
@@ -301,11 +301,11 @@ public class MovieLatest {
         this.video = video;
     }
 
-    public Integer getVoteAverage() {
+    public Double getVoteAverage() {
         return voteAverage;
     }
 
-    public void setVoteAverage(Integer voteAverage) {
+    public void setVoteAverage(Double voteAverage) {
         this.voteAverage = voteAverage;
     }
 
