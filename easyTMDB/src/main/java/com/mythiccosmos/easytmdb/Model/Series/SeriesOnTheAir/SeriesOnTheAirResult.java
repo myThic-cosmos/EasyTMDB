@@ -38,7 +38,7 @@ public class SeriesOnTheAirResult {
     private Integer id;
     @SerializedName("vote_average")
     @Expose
-    private Integer voteAverage;
+    private Double voteAverage;
     @SerializedName("overview")
     @Expose
     private String overview;
@@ -49,7 +49,7 @@ public class SeriesOnTheAirResult {
     public SeriesOnTheAirResult() {
     }
 
-    public SeriesOnTheAirResult(String originalName, List<Integer> genreIds, String name, Double popularity, List<String> originCountry, Integer voteCount, String firstAirDate, String backdropPath, String originalLanguage, Integer id, Integer voteAverage, String overview, String posterPath) {
+    public SeriesOnTheAirResult(String originalName, List<Integer> genreIds, String name, Double popularity, List<String> originCountry, Integer voteCount, String firstAirDate, String backdropPath, String originalLanguage, Integer id, Double voteAverage, String overview, String posterPath) {
         this.originalName = originalName;
         this.genreIds = genreIds;
         this.name = name;
@@ -145,11 +145,11 @@ public class SeriesOnTheAirResult {
         this.id = id;
     }
 
-    public Integer getVoteAverage() {
+    public Double getVoteAverage() {
         return voteAverage;
     }
 
-    public void setVoteAverage(Integer voteAverage) {
+    public void setVoteAverage(Double voteAverage) {
         this.voteAverage = voteAverage;
     }
 
